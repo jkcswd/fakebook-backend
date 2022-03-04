@@ -3,6 +3,10 @@ import express from 'express';
 import path from 'path';
 import cookieParser from 'cookie-parser';
 import logger from 'morgan';
+import mongoose from 'mongoose';
+import dotenv from 'dotenv';
+
+dotenv.config();
 
 const __dirname = path.resolve();
 
@@ -10,6 +14,10 @@ import indexRouter from './routes/index.js';
 
 const app = express();
 
+const mongoDB = process.env.MONGO_STRING;
+mongoose.connect(mongoDB, { useNewUrlParser: true , useUnifiedTopology: true});
+const db = mongoose.connection;
+db.on('error', console.error.bind(console, 'MongoDB connection error:'));
 
 app.use(logger('dev'));
 app.use(express.json());
