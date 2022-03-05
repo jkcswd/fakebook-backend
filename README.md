@@ -28,3 +28,5 @@ A facebook clone MERN stack web application. Built using TDD methodology.
 
 
 ## Reflections
+
+For creating this application I have taken everything I have learned so far to produce the best quality software I could. This includes using TDD, SOLID, making sure I have clean code and good comments and writing good quality documentation.
