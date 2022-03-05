@@ -1,6 +1,6 @@
 # FakeBook
-A facebook clone MERN stack web application. Built using TDD methodology.
-- All documentation in this README for front and back-ends.
+A facebook inspired MERN stack web application, built using the TDD methodology.
+- All documentation for the front and back end of this application is in this document.
 - [Access the front-end github repo here.](#)
 - [Access a live deployment of the web application here.](#)
 
