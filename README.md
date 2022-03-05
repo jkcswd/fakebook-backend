@@ -4,10 +4,12 @@ A facebook clone MERN stack web application.
 - Access front-end here: # .
 
 ## Tech
+- Node
 - Express
+- Mongoose
+- React
 - Jest 
 - Supertest
-- Mongoose
 
 ## Intended functionality 
 - Authentication through facebook login details using passport.js
