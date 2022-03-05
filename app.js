@@ -5,26 +5,27 @@ import cookieParser from 'cookie-parser';
 import logger from 'morgan';
 import mongoose from 'mongoose';
 import dotenv from 'dotenv';
-
 dotenv.config();
-
-const __dirname = path.resolve();
 
 import indexRouter from './routes/index.js';
 
 const app = express();
+const __dirname = path.resolve();
 
+// MongoDB connection 
 const mongoDB = process.env.MONGO_STRING;
 mongoose.connect(mongoDB, { useNewUrlParser: true , useUnifiedTopology: true});
 const db = mongoose.connection;
 db.on('error', console.error.bind(console, 'MongoDB connection error:'));
 
+// Configure server
 app.use(logger('dev'));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
+// Routes
 app.use('/', indexRouter);
 
 // catch 404 and forward to error handler
