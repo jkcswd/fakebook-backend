@@ -7,6 +7,7 @@ import dotenv from 'dotenv';
 dotenv.config();
 
 import indexRouter from './routes/index.js';
+import userRouter from './routes/user.js'
 
 const app = express();
 const __dirname = path.resolve();
@@ -25,6 +26,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 // Routes
 app.use('/', indexRouter);
+app.use('/user', userRouter);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
