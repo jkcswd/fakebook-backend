@@ -1,7 +1,8 @@
-const index = require('../routes/index');
+import index from '../routes/index.js';
 
-const request = require('supertest');
-const express = require('express');
+import request from 'supertest';
+import express from 'express';
+
 const app = express();
 
 app.use(express.urlencoded({ extended: false }));
