@@ -18,8 +18,8 @@ describe('getAllUsers', () => {
           firstName: expect.any(String),
           lastName: expect.any(String),
           email: expect.any(String),
-          friends: expect.arrayContaining([expect.any(Object)]),
-          friendRequests: expect.arrayContaining([expect.any(Object)])
+          friends: expect.arrayContaining([expect.any(String)]), 
+          friendRequests: expect.arrayContaining([expect.any(String)])
         })]));
       }).expect(200, done);
   });
