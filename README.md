@@ -23,6 +23,9 @@ A facebook inspired MERN stack web application, built using the TDD methodology.
 - Users can see all recent posts by themselves and friends on the index page.
 - A user index page to display all users with buttons for the current user to send friend requests.
 
+## Design
+(explain design)
+
 ## Database Schema Diagram
 ![Screenshot](https://github.com/jkcswd/fakebook-backend/blob/main/README/model-screenshot.png?raw=true)
 
