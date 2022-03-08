@@ -26,6 +26,8 @@ A facebook inspired MERN stack web application, built using the TDD methodology.
 ## Database Schema Diagram
 ![Screenshot](https://github.com/jkcswd/fakebook-backend/blob/main/README/model-screenshot.png?raw=true)
 
+## API
+(explain API structure)
 
 ## Reflections
 
