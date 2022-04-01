@@ -4,6 +4,8 @@ import mongoose from "mongoose";
 import dotenv from 'dotenv'
 dotenv.config();
 
+// Script for seeding DB with fake users.
+
 
 // MongoDB connection 
 const mongoDB = process.env.MONGO_STRING;
